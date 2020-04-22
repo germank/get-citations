@@ -29,11 +29,11 @@ Simply run `python get-citations.py <your_name> -o citations.tex` and the
 
 * `\cittotal` expands to your total number of citations.
 * `\cithindex` expands to your h-index.
-* `\cit<keyword>` expands to the number of citations corresponding to the publication identified by `keyword`
+* `\cit<keyword>` expands to the number of citations corresponding to the publication identified by `keyword`, which is the first content word in the title that has not been used before.
 * `\fullcit<keyword>` expands to a rendered text corresponding to the publication identified by `keyword`. By default, this has the form "Cit. num_citations" and
 it's linked to the Google Scholar page that list all the papers citing this corresponding work.
 
-To change the behaviour of the `\fullcit<keyword>` command you can modify the 
+To change how keywords are selected, you can change the `get_publication_keyword` function. To change the behaviour of the `\fullcit<keyword>` command you can modify the 
 `write_render_citations_command` method.
 
 ## Random
