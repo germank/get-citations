@@ -1,0 +1,2 @@
+nltk
+git+https://github.com/davide-coccomini/scholarly
